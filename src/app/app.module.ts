@@ -8,21 +8,24 @@ import { PatientComponent } from './pages/patient/patient.component';
 import { MedicComponent } from './pages/medic/medic.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './material/material.module';
-
+import { PatientEditComponent } from './pages/patient/patient-edit/patient-edit.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PatientComponent,
-    MedicComponent
+    MedicComponent,
+    PatientEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
